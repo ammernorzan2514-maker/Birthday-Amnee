@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Website with Iframe Back</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin: 50px;
+        }
+
+        iframe {
+            border: 2px solid #333;
+            width: 80%;
+            height: 400px;
+            margin-top: 20px;
+            display: none;
+            /* mula-mula sembunyi */
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mini Website dengan Iframe & Back Button</h1>
+
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('page2.html')">Page 2</button>
+    <button onclick="showPage('page3.html')">Page 3</button>
+    <button onclick="showPage('page4.html')">Page 4</button>
+
+    <iframe id="myFrame"></iframe>
+
+    <script>
+        function showPage(page) {
+            const iframe = document.getElementById('myFrame');
+
+            if (page === 'home') {
+                iframe.style.display = 'none'; // sembunyi iframe bila Home
+                iframe.src = '';
+            } else {
+                iframe.style.display = 'block'; // tunjuk iframe
+                iframe.src = page;              // load page lain
+            }
+        }
+    </script>
+</body>
+
+</html>

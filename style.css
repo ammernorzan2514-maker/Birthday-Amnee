@@ -1,0 +1,53 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffb6c1, #ffe4b5);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.container h1 {
+    font-size: 50px;
+    color: #ff4081;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Text */
+.container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff4081;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e91e63;
+    transform: scale(1.1);
+}

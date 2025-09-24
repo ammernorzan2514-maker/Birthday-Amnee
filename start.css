@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+/* bahagian start screen */
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+    color: white;
+}
+
+/* butang start */
+#startBtn {
+    padding: 15px 40px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#startBtn:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#startBtn:active {
+    transform: scale(0.9);
+}
+
+/* main page (disembunyikan dulu) */
+#mainPage {
+    display: none;
+    /* mula-mula hide */
+    padding: 40px;
+    opacity: 0;
+    /* supaya invisible dulu */
+}
+
+/* kelas untuk fade-in */
+.fade-in {
+    display: block;
+    animation: fadeIn 0.8s forwards;
+    /* jalan animasi */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+/* bahagian start screen */
+#startScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #333;
+  color: white;
+}
+
+/* butang start */
+#startBtn {
+  padding: 15px 40px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#startBtn:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+#startBtn:active {
+  transform: scale(0.9);
+}
+
+/* main page (disembunyikan dulu) */
+#mainPage {
+  display: none; /* mula-mula hide */
+  padding: 40px;
+  opacity: 0; /* supaya invisible dulu */
+}
+
+/* kelas untuk fade-in */
+.fade-in {
+  display: block;
+  animation: fadeIn 0.8s forwards; /* jalan animasi */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
